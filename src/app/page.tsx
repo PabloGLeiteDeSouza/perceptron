@@ -1,6 +1,4 @@
 import FormCalcularPerceptron from "@/components/Forms/FormCalcularPerceptron";
-import { Formik } from "formik";
-import Image from "next/image";
 
 export default function Home() {
   return (
