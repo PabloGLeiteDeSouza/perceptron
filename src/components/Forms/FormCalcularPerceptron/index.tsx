@@ -50,7 +50,7 @@ const FormCalcularPerceptron: React.FC = () => {
                 >
                   {
                     values.linhas.map((vls, i) => (
-                      <>
+                      <div key={i}>
                         <div>
                           <h2>
                             Linha {i + 1}
@@ -162,7 +162,7 @@ const FormCalcularPerceptron: React.FC = () => {
                           </div>
                         </label>
                         <div className="divider"></div>
-                      </>
+                      </div>
                     ))
                   }
                   <button onClick={() => addItem(values, setValues)} className="btn btn-circle btn-success" type="button">
