@@ -68,7 +68,7 @@ export const onSubmit = async (values: Values, formikHelpers: FormikHelpers<Valu
             console.log(response.status);
         }
         setIsLoading(false)
-        router.push('/resultados?result='+JSON.stringify(response));
+        router.push('/perceptron/resultados?result='+JSON.stringify(response));
     } catch (error) {
         setIsLoading(false);
         alert((error as Error).message);
